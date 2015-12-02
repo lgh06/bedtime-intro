@@ -1,0 +1,130 @@
+@charset "utf-8";
+@font:"SYHT","微软雅黑","Microsoft YaHei","Heiti","STHeiti","HeitiSC","STHeitiSC";
+@bgcolor:white;
+@btncolor:#F2CB2A;
+@bg1color:#F2CB2A;
+
+html,body,.container{
+    width: 100%;
+    height: 100%;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: @bgcolor;
+    font-family: @font;
+    color:white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+div{
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.clear{
+    height: 0;
+    width: 100%;
+    clear: both;
+}
+
+
+.section{
+    width: 100%;
+}
+
+.bg1{
+    background-color: @bg1color;
+    padding-bottom: 60px;
+    .logob{
+        position: relative;
+        width: 100%;
+        min-height: 250px;
+        margin: 0 auto;
+        img{
+            margin: 0 auto;
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .logo{
+            margin: 0 auto;
+            position: absolute;
+            top:10%;
+            width: 100%;
+            img{
+                margin: 0 auto;
+                display: block;
+                width: 415/2px;
+            }
+        }
+    }
+    
+    
+    
+    .down{
+        text-align: center;
+        color: white;
+    
+        width: 80%;
+        height: 4em;
+        border-radius: 4em;
+        margin: 30px auto 0 auto;
+        background-color: #ff5151;
+        span{
+            line-height: 2em;
+            font-size: 2em;
+        }
+    }
+}
+
+.bg2{
+    padding: 30px 0;
+    background-color: white;
+}
+
+.bg3{
+    padding: 30px 0;
+    background-color: @bg1color; 
+    .introtxt{
+        margin-top: 20px;
+        background-color: #ff5151;
+        @media all and (max-width:340px){
+            font-size: 0.8em;
+        }
+    }
+}
+.bg4{
+    img{
+        width: 100%;
+    }
+    padding-bottom:30px;
+}
+
+.bg5{
+    background-color: @bg1color;
+    padding: 30px 0 40px 0;
+    h2{
+        margin: 5px 0;
+        color: #ff5151;
+    }
+}
+
+.bg6{
+    color:black;
+    p{
+        text-align: center;
+        font-size: 0.6em;
+    }
+}
+
+.ccc{
+    width: 80%;
+    display: block;
+    margin: 0 auto;    
+}
