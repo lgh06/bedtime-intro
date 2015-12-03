@@ -65,9 +65,12 @@ div{
         }
     }
     
-    
+    a,a:link,a:hover,a:visited,a:active{
+        text-decoration: none;
+    }
     
     .down{
+        display: block;
         text-align: center;
         color: white;
     
@@ -79,6 +82,9 @@ div{
         span{
             line-height: 2em;
             font-size: 2em;
+        }
+        &:hover,&:active{
+            box-shadow: 3px 3px 3px #000000;
         }
     }
 }
@@ -98,6 +104,13 @@ div{
             font-size: 0.8em;
         }
     }
+    @media all and (min-width:450px){
+        p{
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    
 }
 .bg4{
     img{
@@ -108,19 +121,40 @@ div{
 
 .bg5{
     background-color: @bg1color;
-    padding: 30px 0 40px 0;
+    padding: 15px 0 40px 0;
+    
+    
+    h2,p{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
     h2{
-        margin: 5px 0;
+        margin: 5px auto;
         color: #ff5151;
+    }
+    p{
+        color: #703f31;
+    }
+    @media all and (min-width:360px){
+        h2,p{
+            width: 80%;
+        }
     }
 }
 
 .bg6{
     color:black;
+    padding: 10px 0;
     p{
+        margin-top: 3px;
         text-align: center;
         font-size: 0.6em;
     }
+    p:first-child{
+        margin-top: 0;
+    }
+
 }
 
 .ccc{
